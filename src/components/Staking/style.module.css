@@ -1,0 +1,105 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 150px 0;
+  padding-top: 250px;
+}
+.stakeWrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  max-width: 546px;
+  background: rgba(214, 237, 255, 0.1);
+  border-radius: 22px;
+  padding: 18px;
+}
+.stakeUnstake {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-items: center;
+  background: rgba(214, 237, 255, 0.12);
+  border-radius: 16px;
+  padding: 12px;
+}
+.stake,
+.unStake {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  height: 60px;
+  gap: 7px;
+  padding: 7px;
+  background: rgba(214, 237, 255, 0.4);
+  border-radius: 10px;
+  background: rgba(214, 237, 255, 0.4);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.activeLock {
+  background: #1ced86;
+  border-radius: 10px;
+}
+.unstake {
+  background: rgba(214, 237, 255, 0.4);
+  border-radius: 10px;
+}
+.lockBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(54, 64, 68, 0.7);
+  border-radius: 5px;
+
+  height: 100%;
+}
+.activeLock .lockBox {
+  background: rgba(24, 51, 46, 0.7);
+  box-shadow: 0px 8px 12px rgba(25, 108, 72, 0.4);
+}
+.lockIcon {
+  width: 24px;
+}
+.heading {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #d6edff;
+}
+.activeLock .heading {
+  color: rgba(24, 51, 46, 0.8);
+}
+.button {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 162%;
+  text-transform: uppercase;
+  color: #18332e;
+  background: #1ced86;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 15px;
+  width: 100%;
+}
+@media only screen and (max-width: 520px) {
+  .heading {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .stakeWrapper {
+    padding: 18px 0px;
+  }
+} ;
